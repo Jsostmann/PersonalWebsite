@@ -2,31 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1,
-      shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <link rel="icon"
-      href="./assets/a2883240-f278-4deb-8952-fe41a2b5fbb0_200x200.png">
+    <link rel="icon" href="./assets/mylogo.png">
     <title>James Ostmann Portfolio</title>
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
-    <link rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link href="./css/carousel.css" rel="stylesheet">
   </head>
   <body>
+    <div class="page-bg"></div>
     <header>
       <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <a class="navbar-brand mr-auto" href="#">
+          <img id="logo" src="./assets/mylogo.png" width="35" height="35">
+        </a>
         <!--<a class="navbar-brand" href="#">Carousel</a>-->
-        <a class="navbar-brand" href="#">
-          <img id="logo"
-            src="./assets/a2883240-f278-4deb-8952-fe41a2b5fbb0_200x200.png"
-            width="35" height="35"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
           data-target="#navbarCollapse" aria-controls="navbarCollapse"
-          aria-expanded="false" aria-label="Toggle navigation">
+          aria-expanded="false">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -36,7 +33,7 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../html/resume.html">Resume</a>
@@ -48,8 +45,23 @@
         </div>
       </nav>
     </header>
-
     <main role="main">
+
+      <!--INTRO-->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="jumbotron text-center">
+              <img id="myavatar" src="./assets/myAvatar.svg" />
+              <h1 id="type_writer"></h1>
+              <h1><span class="element2"></span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -60,21 +72,28 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div id="bg1"></div>
-            <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>-->
+            <!---->
             <div class="container">
               <img src="./assets/myAvatar.svg" />
+              <div class="carousel-caption text-center">
+                <h1>Welcome</h1>
+                <h2><span class="element"></span></h2>
+              </div>
+            </div>
+            <!--
+            <div class="container">
+              <img id="myavatar" src="./assets/myAvatar.svg" />
               <div class="carousel-caption text-left">
                 <h1>Example headline.</h1>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
                   Donec id elit non mi porta gravida at eget metus. Nullam id
                   dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign
-                    up today</a></p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
               </div>
             </div>
+            -->
           </div>
           <div class="carousel-item">
-            <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>-->
             <div class="container">
               <div class="carousel-caption">
                 <h1>Another example headline.</h1>
@@ -87,7 +106,6 @@
             </div>
           </div>
           <div class="carousel-item">
-            <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>-->
             <div class="container">
               <div class="carousel-caption text-right">
                 <h1>One more for good measure.</h1>
@@ -128,13 +146,10 @@
             </a>
           </div>
 
-          <hr class="featurette-divider">
-
           <!-- Relevant Skills section
       ================================================== -->
-          <!-- Wrap the rest of the page in another container to center all the content. -->
           <div class="container marketing">
-            <h2 id="skills"><Skills></h2>
+            <h1 id="skills">< Skills ></h1>
               <div class="row skills">
                 <div class="col-12 skills">
                   <ul class="list-inline list-icons mb-4">
@@ -173,17 +188,16 @@
               </div>
             </div>
 
-            <hr class="featurette-divider">
+            <div class="container">
+              <hr class="featurette-divider">
+            </div>
 
             <!-- Marketing messaging and featurettes
-  ================================================== -->
-            <!-- Wrap the rest of the page in another container to center all the content. -->
+            ================================================== -->
             <div class="container marketing">
-              <!-- Three columns of text below the carousel -->
               <div class="row">
                 <div class="col-lg-4">
-                  <img src="./assets/me.jpg" style="border-radius: 360px;
-                    margin: auto;" height="140" width="140">
+                  <ion-icon name="logo-nodejs"></ion-icon>
                   <h2>Heading</h2>
                   <p class="g">Donec sed odio dui. Etiam porta sem malesuada
                     magna mollis euismod. Nullam id dolor id nibh ultricies
@@ -191,16 +205,10 @@
                     ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                   <p><a class="btn btn-secondary" href="#" role="button">View
                       details &raquo;</a></p>
-                </div><!-- /.col-lg-4 -->
+                </div>
                 <div class="col-lg-4">
-                  <svg style="margin: auto;" class="bd-placeholder-img
-                    rounded-circle" width="140" height="140"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="xMidYMid slice" focusable="false"
-                    role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect
-                      width="100%" height="100%" fill="#777" /><text x="50%"
-                        y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                    <h2>Heading</h2>
+                  <ion-icon name="logo-html5"></ion-icon>
+                  <h2>Heading</h2>
                     <p class="g">Duis mollis, est non commodo luctus, nisi erat
                       porttitor ligula, eget lacinia odio sem nec elit. Cras
                       mattis consectetur purus sit amet fermentum. Fusce
@@ -208,15 +216,9 @@
                       condimentum nibh.</p>
                     <p><a class="btn btn-secondary" href="#" role="button">View
                         details &raquo;</a></p>
-                  </div><!-- /.col-lg-4 -->
+                  </div>
                   <div class="col-lg-4">
-                    <svg style="margin: auto;" class="bd-placeholder-img
-                      rounded-circle" width="140" height="140"
-                      xmlns="http://www.w3.org/2000/svg"
-                      preserveAspectRatio="xMidYMid slice" focusable="false"
-                      role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect
-                        width="100%" height="100%" fill="#777" /><text x="50%"
-                          y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                    <ion-icon name="logo-github"></ion-icon>
                       <h2>Heading</h2>
                       <p class="g">Donec sed odio dui. Cras justo odio, dapibus
                         ac facilisis in, egestas eget quam. Vestibulum id ligula
@@ -224,11 +226,8 @@
                         cursus commodo, tortor mauris condimentum nibh, ut.</p>
                       <p><a class="btn btn-secondary" href="#" role="button">View
                           details &raquo;</a></p>
-                    </div><!-- /.col-lg-4 -->
-                  </div><!-- /.row -->
-
-
-                  <!-- START THE FEATURETTES -->
+                    </div>
+                  </div>
 
                   <hr class="featurette-divider">
 
@@ -285,9 +284,8 @@
 
                   <hr class="featurette-divider">
 
-                  <!-- /END THE FEATURETTES -->
 
-                </div><!-- /.container -->
+                </div>
 
                 <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
                   <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5
@@ -324,7 +322,7 @@
                   <div class="row">
                     <div class="col-12 col-md">
                       <img
-                        src="./assets/a2883240-f278-4deb-8952-fe41a2b5fbb0_200x200.png"
+                        src="./assets/mylogo.png"
                         width="40" height="40" class="d-inline-block align-top">
                       <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
                     </div>
@@ -369,12 +367,11 @@
                   </div>
                 </footer>
               </main>
-              <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                crossorigin="anonymous"></script>
-              <script
-                src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
-                integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
-                crossorigin="anonymous"></script>
-              <script src="../js/script.js"></script>
-            </html>
+              <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+              <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+              <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+              <script src="./js/core.js"></script>
+              <script src="./js/script.js"></script>
+            </body>
+          </html>
