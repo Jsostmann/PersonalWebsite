@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <link rel="icon" href="./assets/mylogo.png">
     <title>James Ostmann Portfolio</title>
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
@@ -149,10 +150,10 @@
           <!-- Relevant Skills section
       ================================================== -->
           <div class="container marketing">
-            <h1 class="heading">< Skills ></h1>
+            <h1 data-anijs="if: mouseover, do: hinge animated, to: target, after: removeAnim" class="heading">< Skills ></h1>
               <div class="row skills">
                 <div class="col-12 skills">
-                  <ul class="list-inline list-icons mb-4">
+                  <ul class="list-inline list-icons">
                     <li class="list-inline-item">
                       <i class="devicon-cplusplus-line-wordmark colored"></i>
                     </li>
@@ -194,9 +195,9 @@
 
             <!-- Marketing messaging and featurettes
             ================================================== -->
-            <h1 class="heading">< Interests ></h1>
             <div class="container marketing">
-              <div class="row">
+              <h1 data-anijs="if: mouseover, do:wobble animated, to: target, after: removeAnim" class="heading">< Interests ></h1>
+              <div class="row interests">
                 <div class="col-lg-4">
                   <ion-icon name="logo-nodejs"></ion-icon>
                   <h2>Heading</h2>
@@ -282,11 +283,26 @@
                         style="border-radius: 21px">
                     </div>
                   </div>
-
                   <hr class="featurette-divider">
-
-
                 </div>
+
+                <div class="container marketing">
+                  <h1 class="heading">< Interests ></h1>
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="my-3 py-3">
+                        <h2 class="display-5">Another headline</h2>
+                        <p class="lead">And an even wittier subheading.</p>
+                      </div>
+                      <div class="bg-light shadow-sm mx-auto" style="width: 80%;
+                        height: 300px; border-radius: 21px 21px 0 0;">
+                        <img src="./assets/one.jpg" width="100%" height="300px"
+                          style="border-radius: 21px 21px 0 0;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
 
                 <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
                   <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5
@@ -325,44 +341,44 @@
                       <img
                         src="./assets/mylogo.png"
                         width="40" height="40" class="d-inline-block align-top">
-                      <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+                      <small class="d-block mb-3">&copy; 2017-2020</small>
                     </div>
                     <div class="col-6 col-md">
                       <h5>Features</h5>
                       <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Cool stuff</a></li>
-                        <li><a class="text-muted" href="#">Random feature</a></li>
-                        <li><a class="text-muted" href="#">Team feature</a></li>
-                        <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                        <li><a class="text-muted" href="#">Another one</a></li>
-                        <li><a class="text-muted" href="#">Last time</a></li>
+                        <li><a class="footer-link" href="#">Cool stuff</a></li>
+                        <li><a class="footer-link" href="#">Random feature</a></li>
+                        <li><a class="footer-link" href="#">Team feature</a></li>
+                        <li><a class="footer-link" href="#">Stuff for developers</a></li>
+                        <li><a class="footer-link" href="#">Another one</a></li>
+                        <li><a class="footer-link" href="#">Last time</a></li>
                       </ul>
                     </div>
                     <div class="col-6 col-md">
                       <h5>Resources</h5>
                       <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Resource</a></li>
-                        <li><a class="text-muted" href="#">Resource name</a></li>
-                        <li><a class="text-muted" href="#">Another resource</a></li>
-                        <li><a class="text-muted" href="#">Final resource</a></li>
+                        <li><a class="footer-link" href="#">Resource</a></li>
+                        <li><a class="footer-link" href="#">Resource name</a></li>
+                        <li><a class="footer-link" href="#">Another resource</a></li>
+                        <li><a class="footer-link" href="#">Final resource</a></li>
                       </ul>
                     </div>
                     <div class="col-6 col-md">
                       <h5>Resources</h5>
                       <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Business</a></li>
-                        <li><a class="text-muted" href="#">Education</a></li>
-                        <li><a class="text-muted" href="#">Government</a></li>
-                        <li><a class="text-muted" href="#">Gaming</a></li>
+                        <li><a class="footer-link" href="#">Business</a></li>
+                        <li><a class="footer-link" href="#">Education</a></li>
+                        <li><a class="footer-link" href="#">Government</a></li>
+                        <li><a class="footer-link" href="#">Gaming</a></li>
                       </ul>
                     </div>
                     <div class="col-6 col-md">
                       <h5>About</h5>
                       <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Team</a></li>
-                        <li><a class="text-muted" href="#">Locations</a></li>
-                        <li><a class="text-muted" href="#">Privacy</a></li>
-                        <li><a class="text-muted" href="#">Terms</a></li>
+                        <li><a class="footer-link" href="#">Team</a></li>
+                        <li><a class="footer-link" href="#">Locations</a></li>
+                        <li><a class="footer-link" href="#">Privacy</a></li>
+                        <li><a class="footer-link" href="#">Terms</a></li>
                       </ul>
                     </div>
                   </div>
@@ -371,6 +387,7 @@
               <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
               <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
               <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+              <script src="https://cdn.jsdelivr.net/gh/anijs/anijs@0.9.3/src/anijs.js"></script>
               <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
               <script src="./js/core.js"></script>
               <script src="./js/script.js"></script>

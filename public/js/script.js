@@ -30,4 +30,16 @@ var typed = new Typed('.element', {
       $('.navbar-collapse').on('hidden.bs.collapse', function() {
         $(".navbar-light").toggleClass('hide');
       });
+
+
+      AniJS.createAnimation([{
+        event: 'mouseover',
+        eventTarget: '[name^=logo]',
+        behaviorTarget: 'target',
+        behavior: 'tada animated',
+        function(e, animationContext){
+          animationContext.run()
+      }
+    }]);
+  
 });
