@@ -58,6 +58,14 @@ a.nav-link:hover {
 }
 */
 
+.heading {
+  color:#fdbf42;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
 .here {
   background-color: transparent !important;
 }
