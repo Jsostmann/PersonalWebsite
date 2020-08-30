@@ -21,16 +21,47 @@ a.nav-link:hover {
   color: black !important;
 }
 
-#bg1 {
+.bg {
   background: url("../assets/campus.jpg");
   filter: blur(5px);
-  background-size: 90% 100%;
   position: absolute;
   width: 100%;
   height: 100%;
+  background-size: 90% 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
+.bgone {
+  background: url("../assets/bg1.jpg");
+  filter: blur(5px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 90% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bgtwo {
+  background: url("../assets/bg2.jpg");
+  filter: blur(5px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 90% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bgthree {
+  background: url("../assets/bg3.png");
+  filter: blur(5px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 90% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 .col-lg-4 {
   justify-content: space-evenly;
