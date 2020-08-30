@@ -59,7 +59,7 @@ a.nav-link:hover {
 */
 
 .heading {
-  color:#fdbf42;
+  color:#002e74;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-align: center;
@@ -310,7 +310,7 @@ header {
 }
 
 .text-muted {
-  color:#fdbf42;
+  color:#fdbf42 !important;
 }
 
 /* Thin out the marketing headings */
